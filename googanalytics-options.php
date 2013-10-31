@@ -21,6 +21,16 @@ function googanalytics_settings_field_google_analytics_id() {
 	<?php
 }
 
+function googanalytics_settings_field_ignore_admin() {
+	$options = googanalytics_get_theme_options();
+	?>
+	<label for="ignore-admin">
+		<input type="checkbox" name="googanalytics_theme_options[ignore_admin]" id="ignore-admin" <?php checked( 'on', $options['ignore_admin'] ); ?> />
+		<?php _e( 'Don\'t capture analytics for site administrators and editors.', 'googanalytics' ); ?>
+	</label>
+	<?php
+}
+
 
 
 
@@ -54,7 +64,8 @@ function googanalytics_theme_options_init() {
 	// $page - The menu page on which to display this field.
 	// $section - The section of the settings page in which to show the field.
 
-	add_settings_field( 'google_analytics_id', 'Google Analytics ID', 'googanalytics_settings_field_google_analytics_id', 'googanalytics_theme_options', 'general' );
+	add_settings_field( 'google_analytics_id', __( 'Google Analytics ID', 'googanalytics' ), 'googanalytics_settings_field_google_analytics_id', 'googanalytics_theme_options', 'general' );
+	add_settings_field( 'ignore_admin', __( 'No Admin Analytics', 'googanalytics' ), 'googanalytics_settings_field_ignore_admin', 'googanalytics_theme_options', 'general' );
 }
 add_action( 'admin_init', 'googanalytics_theme_options_init' );
 
@@ -66,7 +77,7 @@ function googanalytics_theme_options_render_page() {
 	?>
 	<div class="wrap">
 		<?php screen_icon(); ?>
-		<h2><?php _e( 'Exclude from Search', 'googanalytics' ); ?></h2>
+		<h2><?php _e( 'Google Analytics', 'googanalytics' ); ?></h2>
 
 		<form method="post" action="options.php">
 			<?php
@@ -122,6 +133,7 @@ function googanalytics_get_theme_options() {
 	$saved = (array) get_option( 'googanalytics_theme_options' );
 	$defaults = array(
 		'google_analytics_id' => '',
+		'ignore_admin' => 'off',
 	);
 
 	$defaults = apply_filters( 'googanalytics_default_theme_options', $defaults );
@@ -141,6 +153,9 @@ function googanalytics_theme_options_validate( $input ) {
 	if ( isset( $input['google_analytics_id'] ) && ! empty( $input['google_analytics_id'] ) )
 		$output['google_analytics_id'] = wp_filter_nohtml_kses( $input['google_analytics_id'] );
 
+	if ( isset( $input['ignore_admin'] ) )
+		$output['ignore_admin'] = 'on';
+
 	return apply_filters( 'googanalytics_theme_options_validate', $output, $input );
 }
 
@@ -157,6 +172,16 @@ function googanalytics_get_google_analytics_id() {
 	$options = googanalytics_get_theme_options();
 	$setting = $options['google_analytics_id'];
 	return $setting;
+}
+
+function googanalytics_get_ignore_admin() {
+	$options = googanalytics_get_theme_options();
+	$setting = $options['ignore_admin'];
+	if ( $setting == 'on' && current_user_can( 'edit_others_posts' ) ) {
+		return true;
+	} else {
+		return false;
+	}
 }
 
 ?>
