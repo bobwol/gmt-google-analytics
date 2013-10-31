@@ -6,6 +6,8 @@ To get started with Google Analytics for WP, [view the online tutorial](http://c
 
 
 ## Changelog
+* v1.2 (October 31, 2013)
+  * Added a link to settings from plugin menu.
 * v1.1 (October 31, 2013)
   * [Added option to hide analytics script for logged-in admin and editors.](https://github.com/cferdinandi/google-analytics/issues/1)
 * v1.0 (October 16, 2013)
