@@ -3,7 +3,7 @@
 /* ======================================================================
 
 	Plugin Name: Google Analytics for WP
-	Plugin URI: http://cferdinandi.github.io/google-analytics/
+	Plugin URI: https://github.com/cferdinandi/google-analytics/
 	Description: Adds your Google Analytics script to WordPress. Add your Google Analytics ID under <a href="options-general.php?page=googanalytics_theme_options">Settings &rarr; Google Analytics</a>.
 	Version: 1.2
 	Author: Chris Ferdinandi
