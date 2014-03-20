@@ -8,8 +8,9 @@ It also let's you hide the analytics script from logged-in administrators and ed
 **In This Documentation**
 
 1. [Getting Started](#getting-started)
-2. [License](#license)
-3. [Changelog](#changelog)
+2. [How to Contribute](#how-to-contribute)
+3. [License](#license)
+4. [Changelog](#changelog)
 
 
 
@@ -22,6 +23,12 @@ Getting started with Google Analytics for WordPress is as simple as installing a
 3. Add your Google Analytics ID under "Settings" in the Admin Dashboard.
 
 And that's it, you're done. Nice work!
+
+
+
+## How to Contribute
+
+In lieu of a formal style guide, take care to maintain the existing coding style. Don't forget to update the version number, the changelog (in the `readme.md` file), and when applicable, the documentation.
 
 
 
