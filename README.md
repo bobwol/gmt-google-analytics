@@ -5,6 +5,8 @@ Adding a Google Analytics script to WordPress isn't hard, but you shouldn't have
 
 It also let's you hide the analytics script from logged-in administrators and editors, to keep your analytics count more accurate.
 
+[Download Google Analytics for WordPress](https://github.com/cferdinandi/google-analytics/archive/master.zip)
+
 **In This Documentation**
 
 1. [Getting Started](#getting-started)
