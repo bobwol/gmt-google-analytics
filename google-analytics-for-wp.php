@@ -23,10 +23,12 @@ function googanalytics_add_google_analytics( $query ) {
 	if ( $google_analytics_id != '' && !googanalytics_get_ignore_admin() ) {
 		$script = "
 			<script>
-				var _gaq=[['_setAccount','" . $google_analytics_id . "'],['_trackPageview']];
-				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-				g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-				s.parentNode.insertBefore(g,s)}(document,'script'));
+				(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+				function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+				e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+				e.src='//www.google-analytics.com/analytics.js';
+				r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+				ga('create','" . $google_analytics_id . "');ga('send','pageview');
 			</script>";
 		echo $script;
 	}
