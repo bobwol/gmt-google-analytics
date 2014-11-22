@@ -43,6 +43,8 @@ Google Analytics is licensed under the [MIT License](http://gomakethings.com/mit
 
 ## Changelog
 
+This plugin uses [semantic versioning](http://semver.org/).
+
 * v2.0.0 - July 23, 2014
 	* Updated Google Analytics Script based on [new code from HTML5BP](https://github.com/h5bp/html5-boilerplate/blob/master/index.html#L31-L36).
 	* Converted to 3-digit versioning.
