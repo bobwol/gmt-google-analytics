@@ -1,5 +1,5 @@
-# Google Analytics
-A simple plugin that adds an optimized version of the Google Analytics script to WordPress.
+# HTML5 Boilerplate Google Analytics for WordPress
+A simple plugin that adds the HTML5 Boilerplate optimized version of the Google Analytics script to WordPress.
 
 Adding a Google Analytics script to WordPress isn't hard, but you shouldn't have to do it every time you change themes. This simple plugin handles that for you, and uses the optimized snippet recommended by [HTML5 Boilerplate](http://html5boilerplate.com/).
 
@@ -45,6 +45,8 @@ Google Analytics is licensed under the [MIT License](http://gomakethings.com/mit
 
 This plugin uses [semantic versioning](http://semver.org/).
 
+* v2.0.1 - January 7, 2015
+	* Renamed to avoid conflict with other plugin.
 * v2.0.0 - July 23, 2014
 	* Updated Google Analytics Script based on [new code from HTML5BP](https://github.com/h5bp/html5-boilerplate/blob/master/index.html#L31-L36).
 	* Converted to 3-digit versioning.

@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Plugin Name: Google Analytics for WP
+ * Plugin Name: HTML5BP Google Analytics for WP
  * Plugin URI: https://github.com/cferdinandi/google-analytics/
- * Description: Adds your Google Analytics script to WordPress. Add your Google Analytics ID under <a href="options-general.php?page=googanalytics_theme_options">Settings &rarr; Google Analytics</a>.
- * Version 1.2.0
+ * Description: Adds the HTML5 Boilerplate optimized version of Google Analytics script to WordPress. Add your Google Analytics ID under <a href="options-general.php?page=googanalytics_theme_options">Settings &rarr; Google Analytics</a>.
+ * Version 2.0.1
  * Author: Chris Ferdinandi
  * Author URI: http://gomakethings.com
  * License: MIT
@@ -14,7 +14,7 @@
  */
 
 	// Get settings
-	require_once( dirname( __FILE__) . '/googanalytics-options.php' );
+	require_once( dirname( __FILE__) . '/html5bp-google-analytics-options.php' );
 
 	function googanalytics_add_google_analytics( $query ) {
 		$google_analytics_id = googanalytics_get_google_analytics_id();
