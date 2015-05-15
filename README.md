@@ -12,8 +12,7 @@ It also let's you hide the analytics script from logged-in administrators and ed
 1. [Getting Started](#getting-started)
 2. [How to Contribute](#how-to-contribute)
 3. [License](#license)
-4. [Changelog](#changelog)
-5. [Older Docs](#older-docs)
+4. [Older Docs](#older-docs)
 
 
 
@@ -38,24 +37,6 @@ In lieu of a formal style guide, take care to maintain the existing coding style
 ## License
 
 Google Analytics is licensed under the [MIT License](http://gomakethings.com/mit/).
-
-
-
-## Changelog
-
-This plugin uses [semantic versioning](http://semver.org/).
-
-* v2.0.1 - January 7, 2015
-	* Renamed to avoid conflict with other plugin.
-* v2.0.0 - July 23, 2014
-	* Updated Google Analytics Script based on [new code from HTML5BP](https://github.com/h5bp/html5-boilerplate/blob/master/index.html#L31-L36).
-	* Converted to 3-digit versioning.
-* v1.2 - October 31, 2013
-	* Added a link to settings from plugin menu.
-* v1.1 - October 31, 2013
-	* [Added option to hide analytics script for logged-in admin and editors.](https://github.com/cferdinandi/google-analytics/issues/1)
-* v1.0 - October 16, 2013
-	* Initial release.
 
 
 
