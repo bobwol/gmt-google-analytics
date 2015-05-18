@@ -12,7 +12,6 @@ It also let's you hide the analytics script from logged-in administrators and ed
 1. [Getting Started](#getting-started)
 2. [How to Contribute](#how-to-contribute)
 3. [License](#license)
-4. [Older Docs](#older-docs)
 
 
 
@@ -36,10 +35,4 @@ In lieu of a formal style guide, take care to maintain the existing coding style
 
 ## License
 
-Google Analytics is licensed under the [MIT License](http://gomakethings.com/mit/).
-
-
-
-## Older Docs
-
-* [Version 1](https://github.com/cferdinandi/google-analytics/tree/archive-v1)
+The code is available under the [MIT License](LICENSE.md).
