@@ -1,8 +1,9 @@
 <?php
 
 /**
- * Plugin Name: HTML5BP Google Analytics for WP
+ * Plugin Name: GMT Google Analytics for WordPress
  * Plugin URI: https://github.com/cferdinandi/google-analytics/
+ * GitHub Plugin URI: https://github.com/cferdinandi/google-analytics/
  * Description: Adds the HTML5 Boilerplate optimized version of Google Analytics script to WordPress. Add your Google Analytics ID under <a href="options-general.php?page=googanalytics_theme_options">Settings &rarr; Google Analytics</a>.
  * Version 2.0.1
  * Author: Chris Ferdinandi
